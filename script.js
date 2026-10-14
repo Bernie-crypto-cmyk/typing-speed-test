@@ -13,6 +13,7 @@ let testText;
 let testTextElement;
 startButton.addEventListener('click', async () => {
     try {
+        startButton.disabled = 'true';
         difficulty.disabled = 'true';
         mode.disabled = 'true';
     let result =  await fetchData();
